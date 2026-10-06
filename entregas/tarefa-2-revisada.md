@@ -2,7 +2,7 @@
 
 **Projeto:** ROV-MB — Aquisição, Integração e Validação de um ROV Modular  
 **Disciplina:** Curso GDP 2026 — Gerenciamento de Projetos · Gerenciamento de Escopo — Criação da EAP  
-**Base:** Tarefa 1 (TAP) · críticas e decisões do orientador (Cmdt Huback) · Dez Mandamentos da EAP
+**Base:** Tarefa 1 (TAP consolidado) · críticas e decisões do orientador (Cmdt Huback) · Dez Mandamentos da EAP
 
 > **Situação:** versão revisada após a orientação do Cmdt Huback. **Esta é a versão oficial (congelada) da EAP e do Dicionário**, utilizada como base da Tarefa 3.  
 > **Versão original preservada sem alteração:** [`tarefas/Tarefa 02 - EAP e Dicionário.docx`](../tarefas/Tarefa%2002%20-%20EAP%20e%20Dicion%C3%A1rio.docx).
@@ -16,7 +16,7 @@
 
 ## I — Enunciado do trabalho
 
-O projeto ROV-MB tem por objetivo especificar, adquirir, integrar e validar um veículo submarino operado remotamente (ROV) modular, destinado à inspeção visual e à busca de objetos submersos pela Marinha do Brasil. O MVP será operado a partir de terra, por um militar especializado treinado, em água doce e salgada, com câmera e iluminação como núcleo funcional, dentro do envelope operacional aprovado (profundidade nominal de 10 m, máxima de 30 m, autonomia mínima de 2h30). A modularidade é requisito obrigatório da arquitetura, mesmo que os módulos adicionais (sonar, garra/manipulador) não integrem o MVP.
+O projeto ROV-MB tem por objetivo especificar, receber, integrar e validar um veículo submarino operado remotamente (ROV) modular, destinado à inspeção visual e à busca de objetos submersos pela Marinha do Brasil. O MVP será operado a partir de terra, por um militar especializado treinado, em água doce e salgada, com câmera e iluminação como núcleo funcional, dentro do envelope operacional aprovado (profundidade nominal de 10 m, máxima de 30 m, autonomia mínima de 2h30). A modularidade é requisito obrigatório da arquitetura, mesmo que os módulos adicionais (sonar, garra/manipulador) não integrem o MVP. A obtenção contratual do sistema é premissa concluída e não integra o projeto.
 
 Foram elaborados os seguintes documentos para este projeto:
 
@@ -90,19 +90,21 @@ Totais: 4 elementos de primeiro nível, 6 de segundo nível e 8 pacotes de traba
 | Código na EAP | Pacote de trabalho | Especificação | Critério de aceitação |
 |------|------------|------------------------------------------|------------------------|
 | 1 | Gerenciamento do Projeto | Entrega de todas as práticas correlacionadas aos grupos de processo: iniciação, planejamento, execução, monitoramento e controle e encerramento em consonância com o preconizado no PMBOK. Abrange: a governança do projeto (papéis, responsabilidades e processo decisório, com submissão das decisões à Força de Submarinos) e a manutenção do TAP; o plano de gerenciamento do projeto, o cronograma de marcos e o orçamento; os registros de premissas, riscos, questões, decisões e mudanças, com controle integrado de mudanças e avaliação de desempenho; o plano de comunicação e o mapa de partes interessadas, com atas, oficinas e registro da participação dos Distritos e grupamentos; a integração entre usuários, engenharia, logística, testes e capacitação; a validação formal das entregas junto à autoridade de aprovação; e o encerramento do projeto — relatório final, aceite definitivo, transferência formal do pacote do projeto às organizações usuárias, lições aprendidas, recomendação de continuidade (inclusive quanto à integração de módulos futuros), arquivamento da documentação e encerramento administrativo. Os grupos de processo são práticas deste pacote e não constituem subpacotes. | Registros de gerenciamento (TAP, plano, cronograma de marcos, premissas, riscos, decisões e mudanças) mantidos atualizados e desempenho reportado à Força de Submarinos ao longo do ciclo de vida; encerramento aprovado formalmente pela Força de Submarinos, com pendências aceitas ou transferidas, lições aprendidas registradas e recomendação de continuidade emitida (TAP, seções 12, 13 e 15). |
-| 2 | Necessidades e Requisitos | Entrega da linha de base de necessidades e requisitos do ROV-MB. Abrange: a necessidade operacional consolidada e o mapa de usuários (Distritos, grupamentos e militares especializados), com perfis de operadores e tarefas; o CONOPS e o envelope operacional — operação a partir de terra (cais ou margem) por um único operador, em água doce e salgada, preferencialmente em locais abrigados, profundidade nominal de 10 m e máxima de 30 m, limites de correnteza e rebojo, limite de visibilidade (com confirmação da interpretação do valor de 30 cm), preparação, operação, recuperação e cenários de emprego; os requisitos funcionais, ambientais, de imagem e vídeo, autonomia, umbilical, modularidade, segurança (comportamentos de proteção), manutenção, sobressalentes, treinamento e ciclo de vida; a arquitetura modular — núcleo, interfaces, configuração do MVP (câmera e iluminação, sem sonar e sem garra/manipulador) e aparatos para expansões futuras; e os critérios de aceitação do produto e do projeto, com rastreabilidade dos requisitos aos critérios. | Necessidade operacional validada pelos usuários representativos; CONOPS, envelope operacional, arquitetura modular com configuração do MVP e requisitos com critérios de aceitação rastreáveis aprovados formalmente pela Força de Submarinos (TAP, seção 3, item 18; seção 6, item 9; seção 13). |
+| 2 | Necessidades e Requisitos | Entrega da linha de base de necessidades e requisitos do ROV-MB. Abrange: a necessidade operacional consolidada e o mapa de usuários (Distritos, grupamentos e militares especializados), com perfis de operadores e tarefas; o CONOPS e o envelope operacional — operação a partir de terra (cais ou margem) por um único operador, em água doce e salgada, preferencialmente em locais abrigados, profundidade nominal de 10 m e máxima de 30 m, limites de correnteza e rebojo, limite de visibilidade (com confirmação da interpretação do valor de 30 cm), preparação, operação, recuperação e cenários de emprego; os requisitos funcionais, ambientais, de imagem e vídeo, autonomia, umbilical, modularidade, segurança (comportamentos de proteção), manutenção, sobressalentes, treinamento e ciclo de vida; a arquitetura modular — núcleo, interfaces, configuração do MVP (câmera e iluminação, sem sonar e sem garra/manipulador) e aparatos para expansões futuras; e os critérios de aceitação do produto e do projeto, com rastreabilidade dos requisitos aos critérios. | Necessidade operacional validada pelos usuários representativos; CONOPS, envelope operacional, arquitetura modular com configuração do MVP e requisitos com critérios de aceitação rastreáveis aprovados formalmente pela Força de Submarinos (TAP, seção 3, item 17; seção 6, item 9; seção 13). |
 | 3 | Recebimento do ROV | Entrega do sistema ROV recebido na configuração aprovada para o MVP — núcleo do ROV, estação de controle, energia, propulsão, estrutura, câmera, iluminação, umbilical com mecanismo de recuperação e gestão dinâmica e acessórios básicos —, integrado e configurado, com o atendimento aos requisitos comprovado por testes de aceitação. Concentra todo o conteúdo de verificação, validação e testes do projeto, decomposto em TAF (3.1), TAM (3.2), aprovação das planilhas de testes (3.3) e recebimento de sobressalentes e consumíveis (3.4). | Recebimento aprovado pela Força de Submarinos após a aceitação de 3.1 a 3.4: testes críticos concluídos ou formalmente dispensados e critérios de profundidade, autonomia, vídeo, operação e segurança demonstrados ou formalmente aceitos (TAP, seção 6, item 9; seção 15). |
 | 3.1 | TAF | Execução dos testes realizados na instalação da empresa, conforme as planilhas aprovadas (3.3), com acompanhamento da equipe de testes do projeto. Abrange a verificação do sistema integrado e configurado contra a configuração aprovada do MVP (inventário de componentes, números de série e versões de software); a verificação das interfaces da arquitetura modular; e os ensaios de bancada de vídeo e registro de imagem, comunicação, autonomia, estanqueidade, propulsão, integridade e alcance do umbilical, mecanismo de recuperação e gestão dinâmica e comportamentos de proteção (impacto, perda de comunicação e carga anormal associada ao umbilical). Inclui o registro dos resultados nas planilhas, o registro e o tratamento das não conformidades e a repetição dos testes necessários. | 100% dos testes previstos nas planilhas aprovadas do TAF executados e registrados; configuração entregue conforme a configuração aprovada do MVP; não conformidades corrigidas e retestadas ou formalmente aceitas pela Força de Submarinos como pendência. |
 | 3.2 | TAM | Acompanhamento da realização dos testes em água doce e salgada do sistema ROV, a partir de terra (cais ou margem), em locais abrigados, conforme as planilhas aprovadas (3.3), observados os limites ambientais e de segurança do TAP (vedação de rebojo perigoso e de correnteza acima de 5 nós; interrupção fora do limite de visibilidade aprovado). Abrange a demonstração da operação por uma única pessoa treinada; do envelope operacional (profundidade nominal de 10 m e máxima de 30 m); das tarefas de inspeção visual (ferro, casco, hélice e estruturas definidas no CONOPS) e de localização visual de objetos no fundo ou leito, com produção dos registros de imagem e vídeo das missões; o emprego dos procedimentos de lançamento, gestão do fio, recuperação, lavagem e dessalinização; o apoio necessário aos testes (áreas, meios, transporte, autorizações e segurança); e o registro de resultados, não conformidades, correções e repetição de testes. | 100% dos testes previstos nas planilhas aprovadas do TAM executados e registrados em água doce e em água salgada; envelope operacional, operação por uma pessoa e tarefas de inspeção e localização demonstrados ou formalmente aceitos; nenhuma operação fora dos limites ambientais e de segurança aprovados; não conformidades tratadas. |
-| 3.3 | Aprovação das planilhas de testes | Planilhas de testes do TAF e do TAM aprovadas. Abrange a consolidação das planilhas — para cada teste: requisito verificado, procedimento, condições, recursos, critério de aprovação e campo de registro do resultado —, com rastreabilidade entre os requisitos (pacote 2) e os testes e identificação dos testes críticos; a submissão das planilhas à Força de Submarinos para aprovação antes da execução; e a aprovação das planilhas executadas, com resultados, pendências e tratamento das não conformidades, que constituem a evidência formal dos testes para o recebimento. | Planilhas do TAF e do TAM aprovadas pela Força de Submarinos antes do início da respectiva bateria de testes, com todos os requisitos verificáveis vinculados a teste e critério de aprovação; planilhas executadas aprovadas, com 100% dos testes críticos aprovados ou formalmente dispensados (TAP, seção 3, itens 15 e 18; seção 10, indicador 8.2; seção 15). |
-| 3.4 | Recebimento de sobressalentes e consumíveis | Sobressalentes iniciais, consumíveis e ferramentas recebidos e conferidos contra a lista definida nos requisitos (pacote 2), com registro do inventário inicial e acondicionamento conforme os procedimentos de armazenamento e transporte. | 100% dos itens da lista aprovada recebidos e conferidos (quantidade, identificação e estado), com inventário inicial registrado e divergências tratadas antes da aprovação do recebimento (TAP, seção 10, indicador 8.4; seção 15). |
-| 4 | Capacitação | Entrega da organização preparada para operar e manter a configuração inicial do ROV (TAP, objetivo 7): operadores e mantenedores capacitados, piloto operacional avaliado, documentação técnica aprovada e conhecimento do sistema transferido e sustentado. Decomposto em cursos e piloto operacional (4.1) e documentação técnica e gestão do conhecimento (4.2). | Aceitação de 4.1 e 4.2: curso básico, documentação e plano de manutenção entregues e piloto operacional avaliado e aprovado pela Força de Submarinos (TAP, seção 10, indicadores 8.4 e 8.5; seção 15). |
-| 4.1 | Cursos e piloto operacional | Capacitação de operadores e mantenedores (militares especializados) por meio do curso básico de operação e manutenção do sistema, com treinamento teórico e prático, concluído com avaliação para certificação de competência mínima; e piloto operacional — emprego supervisionado do sistema por militar treinado em fainas de inspeção e busca —, com relatório de avaliação dos resultados, desempenho, limites e benefícios, inclusive a avaliação da redução da exposição humana em reconhecimentos preliminares, comparando os resultados com os critérios de aceitação. | Operadores e mantenedores designados aprovados na avaliação de competência mínima; piloto operacional executado por militar treinado dentro dos limites de segurança aprovados; relatório de avaliação do piloto aprovado pela Força de Submarinos (TAP, seção 10, indicador 8.5). |
-| 4.2 | Documentação técnica e gestão do conhecimento | Documentação técnica aprovada e conhecimento do sistema gerido. Abrange: os manuais de operação, contemplando os procedimentos de operação, lançamento, gestão do fio, recuperação, lavagem, dessalinização, armazenamento, transporte e interrupção de emergência; os manuais de manutenção, com o plano de manutenção (apoio de manutenção por 5 anos e vida útil de projeto de 10 anos); o manual técnico do sistema fornecido, com a documentação da configuração final (versões de software e números de série); a análise e a aprovação desses manuais; e a gestão do conhecimento — consolidação da documentação na configuração final, incorporação do conhecimento obtido nos testes e no piloto, controle de versões e disponibilização às organizações usuárias, para transferência e sustentação do conhecimento do sistema. | Manuais de operação, de manutenção e técnico aprovados, contemplando todos os procedimentos do TAP (seção 3, item 12); plano de manutenção entregue; documentação consolidada na configuração final e disponibilizada às organizações usuárias (TAP, seção 10, indicador 8.4; seção 15). |
+| 3.3 | Aprovação das planilhas de testes | Planilhas de testes do TAF e do TAM aprovadas. Abrange a consolidação das planilhas — para cada teste: requisito verificado, procedimento, condições, recursos, critério de aprovação e campo de registro do resultado —, com rastreabilidade entre os requisitos (pacote 2) e os testes e identificação dos testes críticos; a submissão das planilhas à Força de Submarinos para aprovação antes da execução; e a aprovação das planilhas executadas, com resultados, pendências e tratamento das não conformidades, que constituem a evidência formal dos testes para o recebimento. | Planilhas do TAF e do TAM aprovadas pela Força de Submarinos antes do início da respectiva bateria de testes, com todos os requisitos verificáveis vinculados a teste e critério de aprovação; planilhas executadas aprovadas, com 100% dos testes críticos aprovados ou formalmente dispensados (TAP, seção 3, itens 15 e 17; seção 10, indicador 10.2; seção 15). |
+| 3.4 | Recebimento de sobressalentes e consumíveis | Sobressalentes iniciais, consumíveis e ferramentas recebidos e conferidos contra a lista definida nos requisitos (pacote 2), com registro do inventário inicial e acondicionamento conforme os procedimentos de armazenamento e transporte. | 100% dos itens da lista aprovada recebidos e conferidos (quantidade, identificação e estado), com inventário inicial registrado e divergências tratadas antes da aprovação do recebimento (TAP, seção 10, indicador 10.4; seção 15). |
+| 4 | Capacitação | Entrega da organização preparada para operar e manter a configuração inicial do ROV (TAP, objetivo 6): operadores e mantenedores capacitados, piloto operacional avaliado, documentação técnica aprovada e conhecimento do sistema transferido e sustentado. Decomposto em cursos e piloto operacional (4.1) e documentação técnica e gestão do conhecimento (4.2). | Aceitação de 4.1 e 4.2: curso básico, documentação e plano de manutenção entregues e piloto operacional avaliado e aprovado pela Força de Submarinos (TAP, seção 10, indicadores 10.4 e 10.5; seção 15). |
+| 4.1 | Cursos e piloto operacional | Capacitação de operadores e mantenedores (militares especializados) por meio do curso básico de operação e manutenção do sistema, com treinamento teórico e prático, concluído com avaliação para certificação de competência mínima; e piloto operacional — emprego supervisionado do sistema por militar treinado em fainas de inspeção e busca —, com relatório de avaliação dos resultados, desempenho, limites e benefícios, inclusive a avaliação da redução da exposição humana em reconhecimentos preliminares, comparando os resultados com os critérios de aceitação. | Operadores e mantenedores designados aprovados na avaliação de competência mínima; piloto operacional executado por militar treinado dentro dos limites de segurança aprovados; relatório de avaliação do piloto aprovado pela Força de Submarinos (TAP, seção 10, indicador 10.5). |
+| 4.2 | Documentação técnica e gestão do conhecimento | Documentação técnica aprovada e conhecimento do sistema gerido. Abrange: os manuais de operação, contemplando os procedimentos de operação, lançamento, gestão do fio, recuperação, lavagem, dessalinização, armazenamento, transporte e interrupção de emergência; os manuais de manutenção, com o plano de manutenção (apoio de manutenção por 5 anos e vida útil de projeto de 10 anos); o manual técnico do sistema fornecido, com a documentação da configuração final (versões de software e números de série); a análise e a aprovação desses manuais; e a gestão do conhecimento — consolidação da documentação na configuração final, incorporação do conhecimento obtido nos testes e no piloto, controle de versões e disponibilização às organizações usuárias, para transferência e sustentação do conhecimento do sistema. | Manuais de operação, de manutenção e técnico aprovados, contemplando todos os procedimentos do TAP (seção 3, item 12); plano de manutenção entregue; documentação consolidada na configuração final e disponibilizada às organizações usuárias (TAP, seção 10, indicador 10.4; seção 15). |
 
 ## IV — Limites da EAP revisada
 
-**Fora da EAP por decisão do orientador (D2).** Não integram a EAP revisada, sob nenhuma denominação: estudo de mercado; decisão de fornecimento; definição de potenciais fornecedores; comparação ou análise de propostas; estratégia de contratação; seleção de fornecedor; licitação; contratação; matriz de avaliação de fornecedor. A divergência com o texto do TAP está registrada no conflito C1 (seção IX).
+**Premissa — obtenção contratual concluída.** O processo contratual (pesquisa de mercado, definição da solução e contratação) é considerado já realizado e não integra o projeto (TAP consolidado, seção 1). O projeto compreende somente o processo de recebimento, integração, validação e capacitação.
+
+**Fora da EAP por decisão do orientador (D2).** Não integram a EAP revisada, sob nenhuma denominação: estudo de mercado; decisão de fornecimento; definição de potenciais fornecedores; comparação ou análise de propostas; estratégia de contratação; seleção de fornecedor; licitação; contratação; matriz de avaliação de fornecedor.
 
 **Blocos que deixaram de existir como elementos independentes.** V&V/Testes (conteúdo integralmente no Recebimento do ROV — 3) e Encerramento (conteúdo integralmente no Gerenciamento do Projeto — 1). O Gerenciamento do Projeto não possui subpacotes por grupo de processo.
 
@@ -136,9 +138,9 @@ Decisões tomadas na reconstrução para aplicar as decisões do orientador e os
 | Decisão | Assunto | Descrição | Fundamento |
 |---|---------|------------------------------|---------|
 | R1 | Necessidades e Requisitos como pacote único | 2.1, 2.2 e 2.3 absorvidos no pacote 2, cujo conteúdo é detalhado no Dicionário. A estrutura de referência consolidada na discussão já apresentava o pacote 2 sem subdivisões. | Mandamentos IV e VI |
-| R2 | Conteúdo técnico do antigo bloco Fornecedor redistribuído para o pacote 2 | A arquitetura modular e a configuração do MVP (antigo 3.2) e os requisitos de treinamento, sobressalentes, manutenção por 5 anos e vida útil de 10 anos (antigo 3.3) são requisitos do sistema exigidos pelo TAP (entrega 6; requisitos 1, 8, 13 e 14). Passam a integrar a linha de base de requisitos, sem qualquer elemento de mercado, seleção, contratação ou avaliação de fornecedor. | Mandamento II (nenhuma entrega real do TAP perdida) e decisão D2 |
+| R2 | Conteúdo técnico do antigo bloco Fornecedor redistribuído para o pacote 2 | A arquitetura modular e a configuração do MVP (antigo 3.2) e os requisitos de treinamento, sobressalentes, manutenção por 5 anos e vida útil de 10 anos (antigo 3.3) são requisitos do sistema exigidos pelo TAP (entrega 5; requisitos 1, 8, 13 e 14). Passam a integrar a linha de base de requisitos, sem qualquer elemento de mercado, seleção, contratação ou avaliação de fornecedor. | Mandamento II (nenhuma entrega real do TAP perdida) e decisão D2 |
 | R3 | Conteúdo do antigo bloco Recebimento distribuído entre definição, verificação e documentação | A definição do umbilical e dos estados seguros (antigo 4.2) integra os requisitos (2); a verificação do núcleo, da configuração do MVP, do umbilical e do sistema integrado (antigos 4.1 a 4.3) ocorre no TAF (3.1); a documentação da configuração (antigo 4.3) integra a documentação técnica (4.2). | Mandamentos VII e X |
-| R4 | Piloto operacional absorvido em 4.1 | O antigo 6.4 (Avaliação operacional piloto), já subordinado à Capacitação na EAP original, corresponde à entrega 10 e ao indicador 8.5 do TAP. Foi absorvido no pacote 4.1, denominado “Cursos e piloto operacional” para que o nome explicite o conteúdo, sem criar novo pacote. | Mandamentos II, III e VI |
+| R4 | Piloto operacional absorvido em 4.1 | O antigo 6.4 (Avaliação operacional piloto), já subordinado à Capacitação na EAP original, corresponde à entrega 9 e ao indicador 10.5 do TAP. Foi absorvido no pacote 4.1, denominado “Cursos e piloto operacional” para que o nome explicite o conteúdo, sem criar novo pacote. | Mandamentos II, III e VI |
 | R5 | Denominação de 4.2 | O elemento “Documentação técnica” da estrutura de referência foi denominado “Documentação técnica e gestão do conhecimento”, explicitando a incorporação determinada em D5 e garantindo que a soma dos filhos de 4 corresponda a 100% do pai. | Mandamentos III e VIII |
 | R6 | Aceite formal e transferência no Gerenciamento | A aprovação das planilhas executadas (3.3) é a evidência dos testes; a validação formal das entregas, o aceite definitivo, a transferência do pacote do projeto e a recomendação de continuidade pertencem ao pacote 1, evitando duplicidade com o Recebimento. | Mandamento X e decisão D4 |
 
@@ -179,19 +181,21 @@ Referência: XAVIER, Carlos Magno. *Os Dez Mandamentos da Estrutura Analítica d
 | Mandamento | Enunciado | Verificação na EAP revisada | Resultado |
 |---|------------|------------------------------------|------|
 | I | Cobiçarás a EAP do próximo | Consultadas a EAP-modelo da disciplina (calçado à prova d'água), em que o Gerenciamento do Projeto figura como elemento único, e a EAP do Projeto Recebimento FCT, que organiza o recebimento em planilhas de teste, testes de aceitação, capacitação e documentação técnica. Usadas apenas como referência estrutural, sem transposição de conteúdo e sem incorporar elementos excluídos pelo orientador. | Atendido |
-| II | Explicitarás todos os subprodutos, inclusive os necessários ao gerenciamento do projeto | O gerenciamento está no pacote 1. Todas as entregas-chave do TAP estão cobertas (seção IX), exceto as relativas à obtenção contratual, excluídas por decisão do orientador e registradas como conflito C1. | Atendido, com o registro C1 |
+| II | Explicitarás todos os subprodutos, inclusive os necessários ao gerenciamento do projeto | O gerenciamento está no pacote 1. Todas as entregas-chave do TAP consolidado estão cobertas (seção IX). A obtenção contratual é premissa concluída e não integra o projeto (C1 resolvido). | Atendido |
 | III | Não usarás os nomes em vão | Nomes substantivos e orientados à entrega; nenhum nome iniciado por verbo. “TAF”, “TAM” e “Aprovação das planilhas de testes” seguem a orientação (forma substantiva, como “Teste do equipamento” no próprio mandamento). 4.1 e 4.2 nomeados de modo a explicitar o conteúdo absorvido. | Atendido |
 | IV | Guardarás a descrição das entregas no Dicionário da EAP | Os 10 elementos possuem especificação e critério de aceitação. O detalhamento antes distribuído em 23 pacotes foi transferido para as especificações, sem subpacotes ocultos. | Atendido |
 | V | Decomporás até o nível de detalhe que permita o planejamento e controle | Recebimento decomposto em quatro entregas com aceitação própria (TAF, TAM, planilhas, sobressalentes e consumíveis); Capacitação em duas entregas com critérios distintos (competência e piloto; aprovação documental). | Atendido |
 | VI | Não decomporás em demasia | De 30 elementos (7 de primeiro nível e 23 pacotes) para 10 elementos (4 de primeiro nível e 6 de segundo nível), com 8 pacotes de trabalho. Pacotes 1 e 2 sem subdivisão. | Atendido |
-| VII | Honrarás o pai | Testes subordinados ao Recebimento; encerramento ao Gerenciamento; documentação técnica e piloto à Capacitação, entendida como preparo da organização para operar e manter (TAP, objetivo 7); nenhum elemento do antigo Fornecedor. | Atendido |
+| VII | Honrarás o pai | Testes subordinados ao Recebimento; encerramento ao Gerenciamento; documentação técnica e piloto à Capacitação, entendida como preparo da organização para operar e manter (TAP, objetivo 6); nenhum elemento do antigo Fornecedor. | Atendido |
 | VIII | Mandamento dos 100% | Projeto = 1 + 2 + 3 + 4. Recebimento (3) = testes na instalação da empresa (3.1) + testes em água doce e salgada (3.2) + planilhas aprovadas (3.3) + sobressalentes e consumíveis recebidos (3.4). Capacitação (4) = cursos e piloto (4.1) + documentação e gestão do conhecimento (4.2). | Atendido |
 | IX | Não decomporás em somente um subproduto | Nenhum elemento possui filho único: 3 tem quatro filhos, 4 tem dois; 1 e 2 não são decompostos. | Atendido |
 | X | Não repetirás o mesmo elemento como componente de mais de uma entrega | Cada conteúdo possui um único local (seção VII): testes somente em 3; documentação somente em 4.2; encerramento somente em 1; sobressalentes somente em 3.4; plano de manutenção somente em 4.2. | Atendido |
 
 **Pergunta central aplicada a cada conteúdo:** “Isso precisa realmente ser um novo pacote de trabalho ou pode ficar dentro do pacote existente e ser explicado no Dicionário?” — em todos os casos em que a absorção preservou planejamento e controle, optou-se pela absorção.
 
-## IX — Validação contra a Tarefa 1 (TAP)
+## IX — Validação contra a Tarefa 1 (TAP consolidado)
+
+A validação usa o TAP consolidado ([`tarefa-1-revisada.md`](tarefa-1-revisada.md)), que incorpora a premissa de obtenção contratual concluída (conflito C1 resolvido). A numeração abaixo é a do TAP consolidado.
 
 ### Entregas-chave do TAP (seção 4)
 
@@ -201,26 +205,24 @@ Referência: XAVIER, Carlos Magno. *Os Dez Mandamentos da Estrutura Analítica d
 | 2 | Necessidade operacional e mapa de usuários, contemplando Distritos, grupamentos e militares especializados; | 2 | Coberta |
 | 3 | CONOPS e envelope operacional, definindo emprego, preparação, operação, recuperação, limites e cenários; | 2 | Coberta |
 | 4 | Requisitos de alto nível e critérios de aceitação do produto e do projeto; | 2 (requisitos e critérios); 3.3 (critérios de teste) | Coberta |
-| 5 | Estudo de mercado e análise das alternativas de fornecimento, incluindo soluções comerciais, adaptação, cadeia nacional e custo total de propriedade; | — | Fora da EAP por decisão do orientador (C1) |
-| 6 | Arquitetura modular e especificação técnica, contemplando núcleo, interfaces, configuração do MVP, umbilical, gestão dinâmica e estados seguros; | 2 (definição); 3.1 (verificação) | Coberta |
-| 7 | ROV adquirido, recebido, integrado e configurado conforme a solução aprovada; | 3 (recebido, integrado e configurado) | Coberta, exceto “adquirido” (C1) |
-| 8 | Plano, procedimentos e evidências de testes de bancada, água doce e água salgada; | 3.3 (plano e procedimentos); 3.1 e 3.2 (evidências) | Coberta |
-| 9 | Capacitação, documentação, sobressalentes e plano de manutenção; | 4.1 (capacitação); 4.2 (documentação e plano de manutenção); 3.4 (sobressalentes) | Coberta |
-| 10 | Piloto operacional e relatório de avaliação dos resultados, desempenho, limites e benefícios; | 4.1 | Coberta |
-| 11 | Documentação final, aceite, transferência, lições aprendidas, recomendação de continuidade e encerramento do projeto. | 4.2 (documentação final); 1 (aceite, transferência, lições aprendidas, recomendação de continuidade e encerramento) | Coberta |
+| 5 | Arquitetura modular e especificação técnica, contemplando núcleo, interfaces, configuração do MVP, umbilical, gestão dinâmica e estados seguros; | 2 (definição); 3.1 (verificação) | Coberta |
+| 6 | ROV recebido, integrado e configurado conforme a configuração aprovada; | 3 (recebido, integrado e configurado) | Coberta |
+| 7 | Plano, procedimentos e evidências de testes de bancada, água doce e água salgada; | 3.3 (plano e procedimentos); 3.1 e 3.2 (evidências) | Coberta |
+| 8 | Capacitação, documentação, sobressalentes e plano de manutenção; | 4.1 (capacitação); 4.2 (documentação e plano de manutenção); 3.4 (sobressalentes) | Coberta |
+| 9 | Piloto operacional e relatório de avaliação dos resultados, desempenho, limites e benefícios; | 4.1 | Coberta |
+| 10 | Documentação final, aceite, transferência, lições aprendidas, recomendação de continuidade e encerramento do projeto. | 4.2 (documentação final); 1 (aceite, transferência, lições aprendidas, recomendação de continuidade e encerramento) | Coberta |
 
 ### Objetivos do TAP (seção 2)
 
 | Objetivo | Texto do TAP | EAP revisada | Situação |
 |---|---|---|---|
 | 1 | Consolidar a necessidade operacional dos Distritos/grupamentos usuários (T0 + 2 meses) | 2 | Coberto |
-| 2 | Definir a solução comercial ou adaptada mais adequada (T0 + 4 meses) | — | Fora da EAP por decisão do orientador (C1) |
-| 3 | Adquirir e receber a configuração inicial do MVP (T0 + 12 meses) | 3 (recebimento) | Coberto, exceto a aquisição (C1) |
-| 4 | Demonstrar operação segura por uma pessoa treinada | 3.2; 4.1 | Coberto |
-| 5 | Demonstrar o envelope operacional aprovado (10 m nominal / 30 m máximo) | 3.2 | Coberto |
-| 6 | Demonstrar autonomia mínima de 2h30 e registro de imagem (1080p/30fps e 4K/15fps) | 3.1 | Coberto |
-| 7 | Preparar a organização para operar e manter a configuração inicial | 4 (4.1 e 4.2); 3.4 | Coberto |
-| 8 | Avaliar o benefício de redução da exposição humana em reconhecimentos preliminares | 4.1 | Coberto |
+| 2 | Receber a configuração inicial do MVP (T0 + 12 meses) | 3 (recebimento) | Coberto |
+| 3 | Demonstrar operação segura por uma pessoa treinada | 3.2; 4.1 | Coberto |
+| 4 | Demonstrar o envelope operacional aprovado (10 m nominal / 30 m máximo) | 3.2 | Coberto |
+| 5 | Demonstrar autonomia mínima de 2h30 e registro de imagem (1080p/30fps e 4K/15fps) | 3.1 | Coberto |
+| 6 | Preparar a organização para operar e manter a configuração inicial | 4 (4.1 e 4.2); 3.4 | Coberto |
+| 7 | Avaliar o benefício de redução da exposição humana em reconhecimentos preliminares | 4.1 | Coberto |
 
 ### Requisitos de alto nível do TAP (seção 3)
 
@@ -243,9 +245,8 @@ Todos os requisitos são definidos e aprovados na linha de base do pacote 2. A c
 | 13 | Treinamento, documentação e sobressalentes | 3.4, 4.1, 4.2 | RQ-24, RQ-25, RQ-29 |
 | 14 | Vida útil e manutenção | 4.2 | RQ-30 |
 | 15 | Testes | 3.3 | RQ-22 |
-| 16 | Cadeia nacional | — (C1) | Não rastreado — obtenção contratual fora da EAP |
-| 17 | Resultados do MVP | 3.2 | RQ-20 |
-| 18 | Rastreabilidade | 2 | RQ-07 |
+| 16 | Resultados do MVP | 3.2 | RQ-20 |
+| 17 | Rastreabilidade | 2 | RQ-07 |
 
 ### Restrições do TAP (seção 6)
 
@@ -258,28 +259,28 @@ Todos os requisitos são definidos e aprovados na linha de base do pacote 2. A c
 | 5 | Interrupção obrigatória fora do limite de visibilidade aprovado (interpretação do valor de 30 cm a confirmar); | 2 (confirmação da interpretação); 3.2 | Respeitada |
 | 6 | O MVP não terá sonar, garra/manipulador nem capacidade de recuperação física de objetos; | 2 (configuração do MVP); 3.1 (verificação) | Respeitada |
 | 7 | O umbilical terá alcance mínimo de 50 m e mecanismo de recuperação/gestão dinâmica; | 2; 3.1 | Respeitada |
-| 8 | O orçamento ainda não está pré-aprovado e deverá incorporar aquisição, suporte, sobressalentes, treinamento e ciclo de vida; e | 1 (orçamento no planejamento e controle) | Respeitada |
-| 9 | A aprovação de requisitos, solução, testes e recebimento dependerá da Força de Submarinos. | 1 (governança); 2 (requisitos); 3.3 (testes); 3 (recebimento) | Respeitada (aprovação da “solução”: ver C1) |
+| 8 | O orçamento ainda não está pré-aprovado e deverá incorporar suporte, sobressalentes, treinamento e ciclo de vida; e | 1 (orçamento no planejamento e controle) | Respeitada |
+| 9 | A aprovação de requisitos, testes e recebimento dependerá da Força de Submarinos. | 1 (governança); 2 (requisitos); 3.3 (testes); 3 (recebimento) | Respeitada |
 
 ### Partes interessadas
 
-As partes interessadas permanecem as do TAP (seção 8), sem acréscimos. A EAP não cria pacotes por parte interessada. “Setores de aquisição e assessoria jurídica” e “Fornecedores nacionais e integradores” continuam registrados no TAP, mas não originam pacotes nem requisitos rastreados, pois a obtenção contratual está fora da EAP revisada (C1).
+As partes interessadas são as do TAP consolidado (seção 8), sem acréscimos. A EAP não cria pacotes por parte interessada. A empresa responsável pelo sistema ROV participa do TAF (3.1), realizado em suas instalações, e das entregas de cursos, documentação e sobressalentes previstas no requisito 13.
 
 ### Conflitos e observações
 
-**C1 — Obtenção contratual (antigo bloco Fornecedor)** · *Conflito TAP × decisão do orientador* · Aberto — depende de alteração da fonte (Tarefa 1)
+**C1 — Obtenção contratual (antigo bloco Fornecedor)** · *Conflito TAP × decisão do orientador* · Resolvido — TAP consolidado
 
-- **Onde:** TAP: seção 1 (“especificar, selecionar, adquirir…” e estratégia de aquisição de solução comercial); seção 2, objetivo 2 e parte do objetivo 3; seção 3, requisito 16; seção 4, entrega 5 e parte da entrega 7 (“adquirido”); seção 11, marcos M-04, M-06 e parte de M-05 (“estratégia de fornecimento”); seção 13 (aprovação da “estratégia de fornecimento”).
-- **Situação:** Por decisão do orientador (D2), a EAP revisada não contém esses elementos. O texto do TAP, entretanto, continua a descrevê-los como parte do projeto.
-- **Análise:** O próprio TAP (seção 14) estabelece que a aprovação do projeto não representa, por si só, autorização para contratação ou aquisição, que devem observar as aprovações institucionais aplicáveis. Isso permite tratar a obtenção contratual como interface externa à EAP, mas não elimina a divergência textual.
-- **Tratamento:** TAP preservado sem alteração. Proposta de alteração de consistência do TAP, a submeter pelo controle integrado de mudanças (pacote 1) à aprovação da Força de Submarinos: (a) registrar a obtenção contratual como processo institucional externo ao escopo da EAP; (b) ajustar o objetivo 2, as entregas 5 e 7, os marcos M-04 a M-06 e a seção 13; (c) reavaliar o requisito 16, que, na redação atual, é critério de seleção de fornecedor. Na Tarefa 3, o requisito 16 não é rastreado a pacote da EAP.
+- **Onde:** Versão original do TAP: seção 1 (“especificar, selecionar, adquirir…” e estratégia de aquisição); seção 2, objetivos 2 e 3; seção 3, requisitos 13 e 16; seção 4, entregas 5 e 7; seções 5 a 9 (referências a aquisição, contrato e fornecedores); seção 11, marcos M-04 a M-06; seções 12 a 15.
+- **Situação:** A EAP revisada não contém elementos de obtenção contratual (decisão D2), mas a versão original do TAP os descrevia como parte do projeto.
+- **Análise:** Decisão do responsável pelo projeto: não há nada contratual no projeto; a obtenção contratual (pesquisa de mercado, definição da solução e contratação) é considerada já realizada, e o projeto compreende somente o processo de recebimento, integração, validação e capacitação.
+- **Tratamento:** TAP consolidado em entregas/tarefa-1-revisada.md, com premissa explícita e registro das alterações A1 a A25; versão original preservada em tarefas/Tarefa 01 - TAP.docx. Com a supressão do antigo requisito 16, os 17 requisitos de alto nível do TAP consolidado são todos rastreados na Tarefa 3.
 
-**C2 — Sequência dos marcos M-07 a M-09** · *Observação de interpretação* · Registrado — não exige alteração
+**C2 — Sequência dos marcos M-05 a M-07** · *Observação de interpretação* · Registrado — não exige alteração
 
-- **Onde:** TAP, seção 11.
-- **Situação:** O TAP registra “ROV recebido e integração de bancada concluída” (M-07) antes dos testes de bancada (M-08) e em água (M-09). Na EAP revisada, o Recebimento do ROV compreende o TAF, na instalação da empresa, e o TAM; o aceite do recebimento ocorre após os testes.
-- **Análise:** Interpretação adotada: M-08 corresponde ao TAF (ensaios de bancada, segurança e autonomia) e M-09 ao TAM; M-07 registra a disponibilização e a integração de bancada do sistema. O TAP declara os marcos preliminares.
-- **Tratamento:** Sem alteração do TAP. O cronograma detalhado, no pacote 1, deverá refinar a ordem dos marcos.
+- **Onde:** TAP consolidado, seção 11.
+- **Situação:** O TAP registra “ROV recebido e integração de bancada concluída” (M-05) antes dos testes de bancada (M-06) e em água (M-07). Na EAP revisada, o Recebimento do ROV compreende o TAF, na instalação da empresa, e o TAM; o aceite do recebimento ocorre após os testes.
+- **Análise:** Interpretação adotada: M-06 corresponde ao TAF (ensaios de bancada, segurança e autonomia) e M-07 ao TAM; M-05 registra a disponibilização e a integração de bancada do sistema. O TAP declara os marcos preliminares.
+- **Tratamento:** Sem alteração. O cronograma detalhado, no pacote 1, deverá refinar a ordem dos marcos.
 
 **C3 — Consumíveis no pacote 3.4** · *Observação* · Registrado — não exige alteração
 
@@ -288,12 +289,12 @@ As partes interessadas permanecem as do TAP (seção 8), sem acréscimos. A EAP 
 - **Análise:** Complementa, sem contradizer, o escopo de sobressalentes do TAP.
 - **Tratamento:** Mantido conforme a orientação. Sem alteração do TAP.
 
-**C4 — Numeração dos indicadores-chave** · *Observação de forma* · Registrado — não exige alteração
+**C4 — Numeração dos indicadores-chave** · *Observação de forma* · Resolvido — TAP consolidado
 
-- **Onde:** TAP, seção 10.
-- **Situação:** A seção 10 numera os indicadores como 8.1 a 8.5.
+- **Onde:** Versão original do TAP, seção 10.
+- **Situação:** A seção 10 numerava os indicadores como 8.1 a 8.5.
 - **Análise:** Divergência apenas de numeração, sem efeito sobre o conteúdo.
-- **Tratamento:** Indicadores citados com a numeração original (8.1 a 8.5).
+- **Tratamento:** Corrigida para 10.1 a 10.5 no TAP consolidado (alteração A20).
 
 **C5 — Registro da reunião com o orientador** · *Limitação de fonte* · Registrado
 
@@ -302,7 +303,7 @@ As partes interessadas permanecem as do TAP (seção 8), sem acréscimos. A EAP 
 - **Análise:** As críticas e decisões foram extraídas do registro em skills/SKILL_2_Tarefa_2_EAP_Dicionario_ROV_MB.md.
 - **Tratamento:** O histórico usa exclusivamente esse registro, sem justificativas adicionais.
 
-**Resultado da validação:** a EAP revisada cobre o escopo do TAP sem alterar objetivos, requisitos de produto, restrições ou partes interessadas, com a única exceção dos itens de obtenção contratual excluídos por decisão do orientador (C1), que permanecem no TAP e dependem de alteração formal de consistência. O TAP não foi alterado.
+**Resultado da validação:** a EAP revisada cobre 100% das entregas-chave, objetivos, requisitos e restrições do TAP consolidado, sem conteúdo contratual. A consolidação do TAP foi registrada como alteração de consistência (A1 a A25), e a versão original permanece preservada.
 
 ## X — Congelamento
 
@@ -324,7 +325,8 @@ Transcrição da estrutura da versão original, preservada em `tarefas/Tarefa 02
 
 ## Fontes
 
-- `tarefas/Tarefa 01 - TAP.docx` — Tarefa 1 (fonte do escopo).
+- `entregas/tarefa-1-revisada.md` — Tarefa 1, TAP consolidado (fonte do escopo).
+- `tarefas/Tarefa 01 - TAP.docx` — Tarefa 1, versão original (preservada).
 - `tarefas/Tarefa 02 - EAP e Dicionário.docx` — Tarefa 2 original (ponto de partida, preservado).
 - `skills/SKILL_2_Tarefa_2_EAP_Dicionario_ROV_MB.md` — registro das críticas e decisões do orientador.
 - `material de apoio/DEZ MANDAMENTOS DA EAP.pdf`, `MODELO EAP.pdf`, `EAP PROJETO RECEBIMENTO FCT.pdf`, `TAREFA 2 - EAP.pdf`.
