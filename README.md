@@ -1,26 +1,18 @@
 # ROV-MB — Gerenciamento de Projetos
 
-Documentação acadêmica do **Projeto ROV-MB — Aquisição, Integração e Validação de um ROV Modular**, desenvolvida no Curso GDP 2026 — Gerenciamento de Projetos, com orientação do Cmdt Huback.
+Documentação acadêmica do **Projeto ROV-MB — Recebimento, Integração e Validação de um ROV Modular** (Grupo I), Curso GDP 2026 — Gerenciamento de Projetos, professor CMG (RM1-EN) Gian Karlo Huback Macedo de Almeida.
 
-**Site publicado (GitHub Pages):** https://ighorribeiro.github.io/Projeto_GDP/
-
-> **Premissa do projeto:** a obtenção contratual (pesquisa de mercado, definição da solução e contratação) é considerada concluída. O projeto não possui conteúdo contratual e compreende somente o recebimento, a integração, a validação e a capacitação.
-
-O repositório registra a cadeia documental do projeto:
-
-```text
-Tarefa 1 — TAP  →  Tarefa 2 — EAP + Dicionário  →  Tarefa 3 — Gerenciamento da Qualidade  →  Documentação HTML
-```
+> **Premissa do projeto:** não há conteúdo de aquisição ou contratação. O projeto compreende o recebimento, a integração, a validação do ROV e a capacitação do pessoal.
 
 ## Conteúdo
 
-| Tarefa | Documento final | Observação |
-|---|---|---|
-| Tarefa 1 — TAP | [`entregas/tarefa-1-revisada.md`](entregas/tarefa-1-revisada.md) · [`.docx`](entregas/tarefa-1-revisada.docx) | **Versão consolidada** (fonte-base do escopo), sem conteúdo contratual, com registro das alterações de consistência A1 a A25. A versão original está preservada em [`tarefas/Tarefa 01 - TAP.docx`](tarefas/Tarefa%2001%20-%20TAP.docx). |
-| Tarefa 2 — EAP + Dicionário | [`entregas/tarefa-2-revisada.md`](entregas/tarefa-2-revisada.md) · [`.docx`](entregas/tarefa-2-revisada.docx) | **Versão oficial (congelada)**, reconstruída após a orientação. A versão original está preservada em [`tarefas/Tarefa 02 - EAP e Dicionário.docx`](tarefas/Tarefa%2002%20-%20EAP%20e%20Dicion%C3%A1rio.docx). |
-| Tarefa 3 — Gerenciamento da Qualidade | [`entregas/tarefa-3-qualidade.md`](entregas/tarefa-3-qualidade.md) · [`.docx`](entregas/tarefa-3-qualidade.docx) | Matriz de Rastreabilidade de Requisitos e Matriz da Qualidade. Dados em [`matriz-rastreabilidade.csv`](entregas/matriz-rastreabilidade.csv) e [`matriz-qualidade.csv`](entregas/matriz-qualidade.csv). |
-| Auditoria cruzada | [`entregas/auditoria-cruzada.md`](entregas/auditoria-cruzada.md) | Verificação TAP → EAP → Dicionário → Rastreabilidade → Qualidade, com conflitos registrados. |
-| Documentação HTML | [`index.html`](index.html) | Registro acadêmico interativo das três tarefas. |
+| Documento | Arquivo |
+|---|---|
+| **Documento único (Tarefas 1, 2 e 3)**, incorporando as correções do Cmdt Huback | [`entregas/GDP - Grupo I - ROV-MB - Tarefas 1 a 3.docx`](entregas/) · [`.pdf`](entregas/) |
+| Versões enviadas e revisadas pelo Cmdt Huback (registro) | [`tarefas/revisao-huback/`](tarefas/revisao-huback/) |
+| Documentos originais das Tarefas 1 e 2 | [`tarefas/`](tarefas/) |
+
+> O site (`index.html`) ainda reflete a versão anterior e será atualizado a partir do documento único.
 
 ### EAP revisada (versão oficial)
 
@@ -38,27 +30,20 @@ PROJETO ROV-MB
     └── 4.2 Documentação técnica e gestão do conhecimento
 ```
 
-Mudanças determinadas pelo orientador em relação à EAP original (7 elementos de primeiro nível e 23 pacotes): Fornecedor eliminado; V&V/Testes absorvido pelo Recebimento do ROV; Encerramento absorvido pelo Gerenciamento do Projeto; Gerenciamento consolidado em um único pacote; Capacitação com documentação técnica e gestão do conhecimento. O detalhamento está no Dicionário e no histórico da Tarefa 2 revisada.
+Mudanças determinadas pelo orientador em relação à EAP original (7 elementos de primeiro nível e 23 pacotes): Fornecedor eliminado; V&V/Testes absorvido pelo Recebimento do ROV; Encerramento absorvido pelo Gerenciamento do Projeto; Gerenciamento consolidado em um único pacote; Capacitação com documentação técnica e gestão do conhecimento. O detalhamento está no Dicionário da EAP (documento único).
 
 ## Estrutura do repositório
 
 ```text
 .
-├── index.html                  # documentação HTML (arquivo único, CSS e JS embutidos)
+├── index.html                  # documentação HTML (a atualizar)
 ├── README.md
-├── .nojekyll                   # publica os arquivos sem processamento Jekyll no GitHub Pages
-├── CLAUDE.md                   # regras de trabalho do repositório
-├── entregas/                   # versões finais das Tarefas 2 e 3
-│   ├── tarefa-1-revisada.md / .docx   # TAP consolidado
-│   ├── tarefa-2-revisada.md / .docx
-│   ├── tarefa-3-qualidade.md / .docx
-│   ├── matriz-rastreabilidade.csv
-│   ├── matriz-qualidade.csv
-│   ├── auditoria-cruzada.md
-│   └── eap-revisada.png        # diagrama da EAP revisada
-├── tarefas/                    # documentos originais (preservados)
-├── material de apoio/          # material da disciplina
-└── skills/                     # instruções de execução de cada tarefa
+├── .nojekyll
+├── CLAUDE.md
+├── entregas/                   # documento único das Tarefas 1 a 3 (.docx e .pdf)
+├── tarefas/                    # originais e revisao-huback/
+├── material de apoio/
+└── skills/
 ```
 
 ## Visualização local
@@ -81,11 +66,6 @@ O site é servido diretamente da raiz da branch `main` (`index.html`), sem etapa
 - A cada novo push na `main`, o GitHub Pages republica o site automaticamente em cerca de um minuto.
 
 O arquivo `.nojekyll` faz o GitHub Pages servir os arquivos como estão, de modo que os links do `index.html` para `entregas/` e `tarefas/` funcionem também no site publicado.
-
-## Observações de consistência
-
-- **C1 — obtenção contratual (resolvido).** A EAP revisada não contém estudo de mercado, seleção de fornecedor nem contratação (decisão do orientador). Para eliminar a divergência com o TAP, a obtenção contratual passou a ser premissa concluída e o TAP foi consolidado em [`entregas/tarefa-1-revisada.md`](entregas/tarefa-1-revisada.md), com cada alteração registrada (A1 a A25). Os 17 requisitos de alto nível do TAP consolidado são todos rastreados na Tarefa 3.
-- As demais observações (C2 a C6) estão registradas em [`entregas/auditoria-cruzada.md`](entregas/auditoria-cruzada.md) e na seção Histórico do `index.html`.
 
 ## Regras de manutenção
 
