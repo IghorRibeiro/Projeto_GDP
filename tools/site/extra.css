@@ -1,0 +1,43 @@
+/* ---- complementos do documento único ---- */
+.just p,.just,.kv.just li>span:last-child{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.kv li>span:last-child{min-width:0}
+.ident{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 28px;margin:0 0 26px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--soft)}
+.ident div{min-width:0}
+.ident .wide{grid-column:1/-1}
+.ident dt{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.ident dd{margin:3px 0 0;color:var(--ink);overflow-wrap:anywhere}
+.dl-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.dl-row .btn{text-decoration:none;padding:8px 14px}
+.dl-row .btn.primary:hover{color:#fff;background:var(--navy-2)}
+.facts{gap:12px 34px}
+.panel .tags{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.tbl th.r,.tbl td.r{text-align:right}
+.tbl tfoot th,.tbl tfoot td{padding:10px 12px;background:var(--navy-tint);color:var(--navy);border-top:1px solid var(--navy-tint-2);text-align:left}
+.tbl tfoot td.r{text-align:right}
+.sigs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px;max-width:760px;margin:24px auto 0;text-align:center}
+.sig .line{display:block;border-top:1px solid var(--ink-2);margin:0 10% 8px}
+.sig strong{display:block;color:var(--ink)}
+.sig span:last-child{display:block;font-size:.88rem;color:var(--muted)}
+.block h4{margin:0 0 10px}
+.legend-doc{margin:12px 0 0}
+.legend-doc li{margin:0 0 4px}
+.mtx td.just{min-width:260px}
+#mr{min-width:1040px}
+#mr td:nth-child(3){min-width:380px}
+#mq tr.band td{position:static;max-width:none;min-width:0;background:var(--navy-tint);color:var(--navy);font-weight:650;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;cursor:default}
+#mq thead th.grp{text-align:center;border-bottom:1px solid var(--line)}
+#mq thead tr:nth-child(2) th{top:34px}
+#mq thead th[rowspan]{vertical-align:bottom}
+.dlg-grid dd{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.dlg-body .lines{margin:0;padding-left:1.1em}
+.dlg-body .lines li{margin:0 0 4px}
+.reqlist .linkbtn{font-family:var(--mono);font-size:.8rem}
+@media (max-width:760px){
+  .ident{grid-template-columns:1fr 1fr}
+  .sigs{grid-template-columns:1fr}
+  #mr{min-width:900px}
+}
+@media print{
+  .dl-row{display:none}
+  .mtx-wrap{max-height:none;overflow:visible}
+}

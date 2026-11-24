@@ -12,7 +12,7 @@ Documentação acadêmica do **Projeto ROV-MB — Recebimento, Integração e Va
 | Versões enviadas e revisadas pelo Cmdt Huback (registro) | [`tarefas/revisao-huback/`](tarefas/revisao-huback/) |
 | Documentos originais das Tarefas 1 e 2 | [`tarefas/`](tarefas/) |
 
-> O site (`index.html`) ainda reflete a versão anterior e será atualizado a partir do documento único.
+> O site (`index.html`) é gerado a partir do documento único, por `tools/site/` (ver abaixo).
 
 ### EAP revisada (versão oficial)
 
@@ -36,12 +36,13 @@ Mudanças determinadas pelo orientador em relação à EAP original (7 elementos
 
 ```text
 .
-├── index.html                  # documentação HTML (a atualizar)
+├── index.html                  # site (arquivo único, gerado a partir do documento único)
 ├── README.md
 ├── .nojekyll
 ├── CLAUDE.md
 ├── entregas/                   # documento único das Tarefas 1 a 3 (.docx e .pdf)
 ├── tarefas/                    # originais e revisao-huback/
+├── tools/site/                 # extração do DOCX final e geração do index.html
 ├── material de apoio/
 └── skills/
 ```
@@ -50,11 +51,18 @@ Mudanças determinadas pelo orientador em relação à EAP original (7 elementos
 
 O `index.html` não depende de servidor, internet ou bibliotecas externas: basta abri-lo no navegador (duplo clique ou arrastar para a janela do navegador).
 
-Para que os links relativos para os documentos (`.md`, `.csv`, `.docx`, `.pdf`) se comportem como no GitHub Pages, é possível usar um servidor local simples:
+Para que os links relativos para os documentos (`.docx`, `.pdf`) se comportem como no GitHub Pages, é possível usar um servidor local simples:
 
 ```bash
 python3 -m http.server 8000
 # abrir http://localhost:8000
+```
+
+## Regenerar o site
+
+```bash
+python3 tools/site/extract.py "entregas/GDP - Grupo I - ROV-MB - Tarefas 1 a 3.docx" /tmp/rov.json
+python3 tools/site/gen_html.py /tmp/rov.json tools/site/base.css tools/site/app.js tools/site/extra.css . index.html
 ```
 
 ## Publicação no GitHub Pages
@@ -70,5 +78,5 @@ O arquivo `.nojekyll` faz o GitHub Pages servir os arquivos como estão, de modo
 ## Regras de manutenção
 
 - O TAP consolidado é a fonte do escopo; a Tarefa 2 deve permanecer compatível com ele; a Tarefa 3 usa somente os códigos da EAP revisada.
-- O `index.html` representa os documentos finais de `entregas/` e não constitui nova versão do projeto. Qualquer alteração nas tarefas deve ser feita primeiro nos documentos de `entregas/` e então refletida no HTML, nos CSV e na auditoria.
+- O `index.html` representa os documentos finais de `entregas/` e não constitui nova versão do projeto. Qualquer alteração nas tarefas deve ser feita primeiro nos documentos de `entregas/` e então refletida no HTML, regenerado por `tools/site/`.
 - Conflitos entre tarefas são identificados e registrados antes de qualquer correção; nenhuma tarefa anterior é alterada silenciosamente.
