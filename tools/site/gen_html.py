@@ -312,15 +312,12 @@ page = f'''<!doctype html>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="#topo">ROV-MB<small>Grupo I · Tarefas 1–3</small></a>
 <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav" aria-label="Seções do documento"><ol>
-<li><a href="#tap"><span class="n">01 —</span> TAP</a></li><li><a href="#eap"><span class="n">02 —</span> EAP</a></li><li><a href="#qualidade"><span class="n">03 —</span> Qualidade</a></li>
-<li><a href="#historico">Histórico</a></li><li><a href="#referencias">Referências</a></li></ol></nav></div><div class="progress" aria-hidden="true"><span></span></div></header>
+<li><a href="#tap"><span class="n">01 —</span> TAP</a></li><li><a href="#eap"><span class="n">02 —</span> EAP</a></li><li><a href="#qualidade"><span class="n">03 —</span> Qualidade</a></li></ol></nav></div><div class="progress" aria-hidden="true"><span></span></div></header>
 <main id="conteudo">
 {cover}
 {tap}
 {eap}
 {qual}
-{historico}
-{refs}
 </main>
 <footer><div class="wrap"><span>Projeto ROV-MB · Grupo I · GDP — Gerenciamento de Projetos · CIAA 2026</span>
 <span>Representação do documento único final das Tarefas 1 a 3. <a href="#topo">Voltar ao topo</a></span></div></footer>
